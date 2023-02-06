@@ -33,6 +33,7 @@ html{
     box-sizing: inherit;
 }
 
+
 body{
     font-family: 'Roboto Mono';
     font-style: normal;
@@ -40,28 +41,32 @@ body{
     line-height: 1.2;
     font-weight: normal;
     color: #102746;
+    background: url(../img/space-galaxy-background.jpg) no-repeat center;
 }
 
-footer{
+footer{   
     font-family: 'Roboto Mono';
     font-style: normal;
     font-size: 16px;
     line-height: 1.2;
     font-weight: normal;
     color: white;
-}
-
-.wrapper{
-    max-width: 1300px;
-    margin: 0 auto;
+    background-color:rgba(0, 0, 0, 0.5);  
 }
 
 /* header style start */
 
 .header{
-   position: fixed; /* почему убирает белый цвет */
+   position: absolute;
+   top: 0;
+   left: 0;
    width: 100%; /* сдвигает? */
    background-color: black;
+}
+
+.wrapper{
+    max-width: 1300px;
+    margin: 0 auto;        
 }
 
 
@@ -76,7 +81,6 @@ footer{
 .header_menu{
     display: flex;
     flex-wrap: wrap;
-    
 }
 
 .wh_logo{
@@ -113,65 +117,131 @@ footer{
 
 /* header style end */
 
-/* body style start */
+/* main style start */
+
+.main{
+    border-bottom: 1rem white solid;
+}
 
 .intro{
     height: 100vh;
     background: url("../img/bg_container.jpg") no-repeat center;
     background-size: cover;
-
+    padding-top: 200px;
+    border-bottom: 1rem white solid;
 }
 
-
-
-/* body style start */
-
-/* footer style start */
-
-.footer{
-    background-color: #000000;
+.wrapper_main{
+    padding: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color:rgba(0, 0, 0, 0.5);
 }
 
-.footer_wrapper{
-    display: flex;
-    flex-flow: column;
+.main_title{
+    text-align: center;
+    font-size: 36px;
+    color: aliceblue;
     
 }
 
-.other_link{
-    margin-top: 15px;
+.main_title_high{
+    font-size: 56px;
+}
+
+.warhammer_world{
+    margin-top: 30px;
+    padding-left: 25px;
+    font-size: 26px;
+    color: aliceblue;
+}
+
+
+.main_news{
+    background-color:rgba(0, 0, 0, 0.5);
+    height: 1000px;
+    margin-top: -200px;
+}
+
+.article_header{
+    padding-top: 50px;
+    padding-left: 50px;
+    font-size: 36px;
+    color: aliceblue;
+}
+
+
+/* main style start */
+
+/* footer style start */
+
+.footer_wrapper{
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    flex-flow: column;
+    padding: 0% 5%;
 }
 
-.other_text{
-    font-family: 'Roboto Mono';
-    font-style: normal;
-    font-size: 16px;
-    line-height: 1.2;
-    font-weight: 700;
-    color: white;
+.footer_menu{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.fb_logo{
-    height: 40px;
-    width: 40px;
-}
-
-.youtube_logo{
-    height: 110px;
-    width: 110px;
-}
-
-.instagram_logo{
-    height: 110px;
-    width: 120px;
+.footer_nav{
+    margin-bottom: 50px;
 }
 
 .footer_list{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: baseline;
+    margin-top: 30px;
+    
 }
+
+.footer_item{
+    margin-left: 50px;
+}
+
+.footer_item:first-child{
+    margin-left: 0px;
+}
+
+.footer_universe,.footer_books,.footer_games{
+    padding-left: 2%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+}
+
+.footer_universe_link,.footer_books_link,.footer_games_link{
+    font-size: 32px;
+    color: aliceblue;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+
+.footer_universe_menu_link,.footer_books_menu_link,.footer_all_books_menu_link,.footer_games_menu_link{
+    font-size: 26px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.footer_info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.about_project_link,.about_project_link{
+    font-size: 36px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+/* footer style end */
 
