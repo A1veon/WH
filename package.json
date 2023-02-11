@@ -1,0 +1,27 @@
+{
+  "name": "website-warhammer",
+  "version": "0.0.1",
+  "description": "",
+  "source": "src/index.html",
+  "scripts": {
+    "serve": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/A1veon/WH.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/A1veon/WH/issues"
+  },
+  "homepage": "https://github.com/A1veon/WH#readme",
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
